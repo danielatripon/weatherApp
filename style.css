@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.weather-forecast {
+  display: flex;
+}
+
+.card-deck {
+  width: 200px;
+  flex-direction: row;
+}
+.card {
+  gap: 10px;
+  margin: 20px;
+}

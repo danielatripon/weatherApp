@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--  bootswatch min.css quartz theme -->
+
+    <link rel="stylesheet" href="bootstrap.min (4).css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Homework 11 - Weather app</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center text-primary">
+        My<span class="text-info">Weather</span>App
+      </h1>
+
+      <div class="row">
+          <div id="weather-form">
+            <form class="form">
+              <div class="form-goup">
+                <label for="city">
+                  <h3><span class="text-primary">City</span></h3>
+                </label>
+                <input
+                  type="text"
+                  id="city"
+                  class="form-control"
+                  placeholder="Search for a city"
+                  autofocus
+                />
+                <p class="msg mt-1"></p>
+              </div>
+
+              <button type="submit" id="weather-btn" class="btn btn-primary">
+                Show weather
+              </button>
+              <button type="submit" id="forecast-btn" class="btn btn-primary">
+                Show forecast
+              </button>
+            </form>
+          </div>
+
+        <div class="row weather-now mt-5">
+            <h2>
+              <span class="text-primary font-weight-bold">Current weather</span>
+            </h2>
+            <hr />
+              <div class="weather-description col">
+                <div class="card" style="width: 18rem">
+                  <center>
+                    <img
+                      src="#"
+                      class="card-img-top"
+                      id="weatherImg"
+                      alt="icon"
+                      style="width: 100px; height: 100px"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title title"></h5>
+                      <p class="card-text description"></p>
+                      <p class="card-text humidity"></p>
+                      <p class="card-text pressure"></p>
+                      <p class="card-text temp"></p>
+                      <p class="card-text temp_min"></p>
+                      <p class="card-text temp_max"></p>
+                      
+                    </div>
+                  </center>
+                </div>
+              </div>
+
+          <div class="weather-map col mt-2 embed-responsive">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1631276829595!5m2!1sen!2suk"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        </div>
+
+        <h2 class="mt-4">
+          <span class="text-primary font-weight-bold">Forecast</span>
+        </h2>
+        <hr />
+        <div class="row weather-forecast col">
+          <!-- <ul class="cities"></ul> -->
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script src="app1.js"></script> -->
+  </body>
+</html>
